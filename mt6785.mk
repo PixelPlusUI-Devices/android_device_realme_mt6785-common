@@ -31,6 +31,12 @@ $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 # EngineerMode
 $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 
+# prebuilt-apps
+PRODUCT_PACKAGES += \
+    MetroMusic \
+    QPGallery \
+    ViaBrowser
+
 # Parts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
